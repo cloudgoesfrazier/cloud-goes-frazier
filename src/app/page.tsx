@@ -1,6 +1,46 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+      {/* Header */}
+      <header className="mx-auto max-w-5xl px-6 pt-8">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/logo.png"
+              alt="Cloud Goes Frazier"
+              width={36}
+              height={36}
+              priority
+            />
+            <span className="text-sm font-medium text-zinc-200">
+              Cloud Goes Frazier
+            </span>
+          </div>
+
+          <nav className="flex items-center gap-4 text-sm">
+            <a
+              href="https://github.com/cloudgoesfrazier"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-300 hover:text-white"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/zacharyafrazier/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-300 hover:text-white"
+            >
+              LinkedIn
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Page body */}
       <div className="mx-auto max-w-3xl px-6 py-24">
         {/* Hero */}
         <section>
@@ -20,12 +60,16 @@ export default function Home() {
           <div className="mt-8 flex gap-4">
             <a
               href="https://github.com/cloudgoesfrazier"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black hover:bg-zinc-200"
             >
               GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/zacharyafrazier/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md border border-zinc-700 px-4 py-2 text-sm text-zinc-300 hover:bg-zinc-900"
             >
               LinkedIn
@@ -82,8 +126,8 @@ export default function Home() {
 
           <p className="mt-4 text-zinc-400">
             My background includes computer science and hands-on experience
-            building systems that need to work in production.
-            Cloud Goes Frazier is where I build and explore projects that extend that work.
+            building systems that need to work in production. Cloud Goes Frazier
+            is where I build and explore projects that extend that work.
           </p>
         </section>
 
