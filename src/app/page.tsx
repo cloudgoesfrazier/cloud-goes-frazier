@@ -3,44 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Header */}
-      <header className="mx-auto max-w-5xl px-6 pt-8">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo.png"
-              alt="Cloud Goes Frazier"
-              width={36}
-              height={36}
-              priority
-            />
-            <span className="text-sm font-medium text-zinc-200">
-              Cloud Goes Frazier
-            </span>
-          </div>
-
-          <nav className="flex items-center gap-4 text-sm">
-            <a
-              href="https://github.com/cloudgoesfrazier"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-300 hover:text-white"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/zacharyafrazier/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-300 hover:text-white"
-            >
-              LinkedIn
-            </a>
-          </nav>
-        </div>
-      </header>
-
-      {/* Page body */}
       <div className="mx-auto max-w-3xl px-6 py-24">
         {/* Hero */}
         <section>
@@ -61,7 +23,7 @@ export default function Home() {
             <a
               href="https://github.com/cloudgoesfrazier"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black hover:bg-zinc-200"
             >
               GitHub
@@ -69,7 +31,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/zacharyafrazier/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               className="rounded-md border border-zinc-700 px-4 py-2 text-sm text-zinc-300 hover:bg-zinc-900"
             >
               LinkedIn
@@ -132,8 +94,32 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-24 text-sm text-zinc-500">
-          © {new Date().getFullYear()} Cloud Goes Frazier
+        <footer className="mt-24 border-t border-zinc-800 pt-10">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-5">
+              <Image
+                src="/logo.png"
+                alt="Cloud Goes Frazier"
+                width={180}
+                height={180}
+                className="opacity-90"
+                priority
+              />
+              <div>
+                <div className="text-sm font-medium text-zinc-200">
+                  Cloud Goes Frazier{" "}
+                  <span className="text-zinc-500">• Est. 2021</span>
+                </div>
+                <div className="text-xs text-zinc-500">
+                  Projects, experiments, and technical write-ups.
+                </div>
+              </div>
+            </div>
+
+            <div className="text-sm text-zinc-500">
+              © 2026 Cloud Goes Frazier
+            </div>
+          </div>
         </footer>
       </div>
     </main>
