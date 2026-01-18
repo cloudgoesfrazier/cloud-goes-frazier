@@ -14,7 +14,7 @@ export default function Home() {
 
           <p className="mt-4 text-base text-zinc-400">
             I build and explore real-world systems across Kubernetes,
-            infrastructure automation, GPU platforms, and AI tooling.
+            Infrastructure Automation, GPU platforms, and AI tooling.
           </p>
 
           <div className="mt-8 flex gap-4">
